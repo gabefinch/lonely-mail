@@ -11,8 +11,8 @@
   <tbody>
     {{#each email in controller}}
       <tr {{action 'loadEmail' email}}>
-        <td>1</td>
-        <td>{{email.title}}</td>
+        <td>{{_view.contentIndex}}</td>
+        <td>{{email.subject}}</td>
         <td>{{email.from}}</td>
       </tr>
     {{/each}}

@@ -14,7 +14,7 @@ FauxMail.EmailsController = Ember.ArrayController.extend({
       var newEmail = this.store.createRecord('email', {
         from: this.get('from'),
         to: this.get('to'),
-        title: this.get('subject'),
+        subject: this.get('subject'),
         body: this.get('body')
       });
       newEmail.save();
