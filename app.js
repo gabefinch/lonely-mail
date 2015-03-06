@@ -1,0 +1,1 @@
+fauxMail = Ember.Application.create();
