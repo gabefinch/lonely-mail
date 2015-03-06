@@ -12,22 +12,24 @@
   <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
   <script src="libs/ember-data.js"></script>
   <script src="libs/localstorage-adapter-0.5.1.js"></script>
-
-  <!-- FauxMail App -->
+<!-- FauxMail App -->
   <script src="app.js"></script>
   <script src="store.js"></script>
   <script src="router.js"></script>
-
-  <!-- Emails -->
+<!-- Emails -->
   <script src="controllers/emailsController.js"></script>
   <script src="routes/emails.js"></script>
-
+<!-- Email -->
+  <script src="controllers/emailController.js"></script>
+  <script src="routes/email.js"></script>
+<!-- Model -->
   <script src="models/email.js"></script>
 
   <script>
     EmberHandlebarsLoader.loadTemplates([
       'application',
-      'emails'
+      'emails',
+      'email'
     ]);
   </script>
 </head>

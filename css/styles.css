@@ -1,0 +1,7 @@
+.home-link:hover {
+  text-decoration:none;
+  color: firebrick;
+}
+.home-link {
+  color:dimgray;
+}
