@@ -1,1 +1,1 @@
-fauxMail = Ember.Application.create();
+FauxMail = Ember.Application.create();

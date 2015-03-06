@@ -1,0 +1,48 @@
+<h4>Inbox - </h4>
+
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>From</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {{#each email in controller}}
+        <td>1</td>
+        <td>{{email.title}}</td>
+        <td>{{email.from}}</td>
+        <td>fix this put something in</td>
+      {{/each}}
+    </tr>
+  </tbody>
+</table>
+
+<button {{action 'toggleEmailForm'}} class="btn btn-primary">
+  New Email
+</button>
+
+{{#if emailForm}}
+<form class="well">
+  <div class="form-group">
+    <label>To:
+      {{input value=from class="form-control"}}
+    </label>
+    <label>From:
+      {{input value=to class="form-control"}}
+    </label>
+    <label>Title:
+      {{input value=title class="form-control"}}
+    </label>
+    <label>Text:
+      {{textarea value=body class="form-control" rows="4" columns="80"}}
+    </label>
+  </div>
+  <button {{action 'emailAdd'}} class="btn btn-danger">
+    Send
+  </button>
+</form>
+{{/if}}
