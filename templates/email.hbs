@@ -1,5 +1,34 @@
-{{model}}
-{{body}}
-{{to}}
-{{from}}
-{{subject}}
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{subject}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <h4 class="col-sm-6">
+        From:
+        <strong>
+          {{from}}
+        </strong>
+      </h4>
+      <h4 class="col-sm-6">
+        To:
+        <strong>
+          {{to}}
+        </strong>
+      </h4>
+    </div>
+    <h4>
+      Subject:
+      <strong>
+        {{subject}}
+      </strong>
+    </h4>
+    <div class="container">
+      <h4>Message:</h4>
+      <h4>{{body}}</h4>
+    </div>
+  </div>
+</div>
+{{#link-to 'emails'}}
+<button class="btn btn-primary">Back to Inbox</button>
+{{/link-to}}
