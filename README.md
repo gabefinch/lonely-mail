@@ -1,6 +1,33 @@
-Blogger
-=======
+Faux Mail/Lonely Mail
+=====================
 
 A simple example app built with Ember.js. All dependencies are included.
+App is a simplistic "email" client interface that allows creation of
+emails all of which appear in the users inbox.
 
-Because the app uses AJAX to load templates, you cannot open `index.html` from the `file://` protocol. Instead, you must start a web server to load your app. The easiest way to start a web server is to download [Mongoose](http://cesanta.com/mongoose.shtml), copy it into your project directory, and open it up. Alternatively, on a Mac, you can run `$ python -m SimpleHTTPServer` from your project directly, and then in your browser, visit http://0.0.0.0:8000.
+Motivation
+----------
+Created during a week of Ember training at Epicodus
+Practice on basic Ember routing, data handling, and controller logic.
+
+
+Installation and Usage
+------------
+To run the app clone this repository.
+From the project directory in terminal type
+
+```
+$ python -m SimpleHTTPServer
+```
+
+Then open up `localhost:8000` in your web browser
+
+Author
+------
+
+Gabe Finch
+
+License
+-------
+
+MIT license.
