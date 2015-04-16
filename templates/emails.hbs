@@ -13,13 +13,11 @@
       </thead>
       <tbody>
         {{#each email in controller}}
-          <tr>
-            <td>{{_view.contentIndex}}</td>
-            {{#link-to 'email' email}}
-              <td><button class="btn btn-primary">{{email.subject}}</button></td>
-            {{/link-to}}
-            <td>{{email.from}}</td>
-          </tr>
+          {{#link-to 'email' email tagName="tr"}}
+              <td>{{_view.contentIndex}}</td>
+                <td>{{email.subject}}</td>
+              <td>{{email.from}}</td>
+          {{/link-to}}
         {{/each}}
       </tbody>
     </table>
