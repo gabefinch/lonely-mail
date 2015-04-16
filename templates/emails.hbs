@@ -6,7 +6,6 @@
     <table class="table table-hover ">
       <thead>
         <tr>
-          <th>#</th>
           <th>Subject</th>
           <th>From</th>
         </tr>
@@ -14,8 +13,7 @@
       <tbody>
         {{#each email in controller}}
           {{#link-to 'email' email tagName="tr"}}
-              <td>{{_view.contentIndex}}</td>
-                <td>{{email.subject}}</td>
+              <td>{{email.subject}}</td>
               <td>{{email.from}}</td>
           {{/link-to}}
         {{/each}}
